@@ -102,21 +102,14 @@ public class Person {
 	public void setHeightIn(int heightIn) {
 		this.heightIn = heightIn;
 	}
+		
+	public void printPersonInfoBMI(double BMI)
+	{
+		System.out.println(BMI);
+	}
+	
 	
 
-	
-	
-	
-	
-//	public Person(String pFname, String pLname, double pWeight, int pHeightFt, int pHeightIn)
-//	{
-//		fName = pFname;
-//		lName = pLname;
-//		weightLb = pWeight;
-//		heightFt = pHeightFt;
-//		heightIn = pHeightIn;
-//		
-//	}
 	
 	
 }
