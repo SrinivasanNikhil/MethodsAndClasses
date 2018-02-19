@@ -1,6 +1,10 @@
 
 public class Metrics {
 
+	public Metrics()
+	{
+		
+	}
 	
 	public double calculateBMI(double weight, int htFt, int htIn)
 	{
