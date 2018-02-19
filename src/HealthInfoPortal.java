@@ -2,11 +2,16 @@ import java.util.*;
 
 public class HealthInfoPortal {
 
-	public static void main(String[] args) {
+	private Scanner scan;
+	private Metrics calc;
 
-		Scanner scan = new Scanner(System.in);
-		Metrics calc = new Metrics();
-		
+	
+	
+	
+	public HealthInfoPortal() {
+	
+		scan = new Scanner(System.in);
+		calc = new Metrics();
 		System.out.println("Please enter your first name >");
 		String fname = scan.next();
 		
@@ -23,9 +28,19 @@ public class HealthInfoPortal {
 		int heightIn = scan.nextInt();
 		
 		Person aPerson = new Person(fname,lname,weight,heightFt,heightIn);
+		
 		double bmi = calc.calculateBMI(weight, heightFt, heightIn);
 		
 		aPerson.printPersonInfoBMI(bmi);
+		
+	}
+
+
+
+
+	public static void main(String[] args) {
+
+		HealthInfoPortal hip = new HealthInfoPortal();
 		
 		
 		
